@@ -7,7 +7,7 @@ import Home from "./pages/Home.jsx";
 import Search from "./pages/Search.jsx";
 
 import "./index.css";
-import MovieDetails from "./pages/Movie.jsx";
+import Movie from "./pages/Movie.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<Home />} />
-          <Route path="movie/:id" element={<MovieDetails />} />
+          <Route path="movie/:id" element={<Movie />} />
           <Route path="search" element={<Search />} />
         </Route>
       </Routes>
